@@ -5,7 +5,9 @@ This rest api is written using Django 2.1.4 and Django Rest Framework 3.9.0. Pyt
 After running the migrations and python manage.py runserver please check betting/urls for further instructions. 
 As you will not have any data, please run the post method first. 
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+TO DO:
+
+* update option for odds
+* documentation
+* tests for the serializer objects
+
