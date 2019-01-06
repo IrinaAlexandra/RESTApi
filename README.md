@@ -7,6 +7,6 @@ As you will not have any data, please run the post method first.
 
 
 TO ADD
-  update options of odds
-  documentation
-  tests
+  *update options of odds
+  *documentation
+  *tests
