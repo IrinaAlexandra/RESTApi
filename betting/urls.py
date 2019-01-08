@@ -3,11 +3,11 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from betting import views
 
 urlpatterns = [
-    path('betting/', views.EventList.as_view()), #Get all events(matches). Here to also send the post method with the new even
-    path('betting/<int:pk>/', views.EventDetail.as_view(), name='event-detail'),
-    path('betting/event/football/', views.EventOrderBy.as_view()),# add your ordering= paramaer here
-    path('betting/event/', views.EventFilter.as_view()),# add ?name= paramer here
-    path('betting/selection/update/<int:pk>', views.SelectionDetail.as_view()) #work in progress
+    path('betting/submit', views.EventListPost.as_view()), #view for posting new events or odds updates
+    path('betting/', views.EventListGet.as_view()), #get all the events(matches)
+    path('betting/<int:pk>/', views.EventDetail.as_view(), name='event-detail'), #get match by id
+    path('betting/event/football/', views.EventOrderBy.as_view()), #get matches with the ability to order by
+    path('betting/event/', views.EventFilter.as_view()), #get matches with the ability to search by name
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
