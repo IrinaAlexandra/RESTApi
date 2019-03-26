@@ -1,5 +1,4 @@
 from django.db import models
-from django.core import serializers
 
 # Create your models here.
 class Sport(models.Model):
